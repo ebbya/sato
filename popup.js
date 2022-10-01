@@ -1,7 +1,9 @@
 jQuery(document).ready(function($){
 	$("#timerbutton").click(function(){
-		var time = document.getElementById("timeinput").value;
+		$("#timeinput").hide();
+		$("#timerbutton").hide();
+		var time = document.getElementById('timeinput').value;
+		document.getElementById("output").innerHTML = time; 
+		
 	});
 });
-
-
